@@ -54,6 +54,7 @@ class TTexts {
   static const String submit="Submit";
   static const String done="Done";
 
+
   //home
 
   static const String homeAppbarTitle ="Good day for shopping";

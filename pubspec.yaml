@@ -18,18 +18,21 @@ dependencies:
   intl: ^0.18.1
   logger: ^2.0.2+1
   url_launcher: ^6.2.1
-  get: ^4.6.6
   get_storage: ^2.1.1
   flutter_native_splash: ^2.3.6
   smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+
 # Icons
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.6
 
 # State Management
-get: ^4.6.6
+  get: ^4.6.6
 
 # Product Specific
+  readmore: ^2.2.0
+
 
 #--------------- Packages end -----------#
 
@@ -51,6 +54,8 @@ flutter:
    - assets/images/
    - assets/logos/
    - assets/animations/
+   - assets/banners/
+   - assets/products/
 
 # Local Fonts -------
 

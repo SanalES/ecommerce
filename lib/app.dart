@@ -1,6 +1,5 @@
 import 'package:ecommerce/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:ecommerce/utils/theme/theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

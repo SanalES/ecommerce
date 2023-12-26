@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -15,19 +14,19 @@ class TTermsAndConditionCheckBox extends StatelessWidget {
     return Row(
       children: [
         SizedBox(width: 24 , height: 24 ,child: Checkbox(value: true, onChanged: (value) {} )),
-        const SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: Sizes.spaceBtwItems,),
         Text.rich(
             TextSpan(children: [
 
-              TextSpan(text: '${TTexts.iAgreeTo}' , style: Theme.of(context).textTheme.bodyMedium ),
-              TextSpan(text: '${TTexts.privacyPolicy}', style: Theme.of(context).textTheme.bodyMedium!.apply(
+              TextSpan(text: TTexts.iAgreeTo , style: Theme.of(context).textTheme.bodyMedium ),
+              TextSpan(text: TTexts.privacyPolicy, style: Theme.of(context).textTheme.bodyMedium!.apply(
                 color: dark ? TColors.white : TColors.primary,
                 decoration: TextDecoration.underline,
                 decorationColor: dark ? TColors.white : TColors.primary,
               ) ),
 
-              TextSpan(text: '${TTexts.and}' , style: Theme.of(context).textTheme.bodyMedium ),
-              TextSpan(text: '${TTexts.termsandconditions}', style: Theme.of(context).textTheme.bodyMedium!.apply(
+              TextSpan(text: TTexts.and , style: Theme.of(context).textTheme.bodyMedium ),
+              TextSpan(text: TTexts.termsandconditions, style: Theme.of(context).textTheme.bodyMedium!.apply(
                 color: dark ? TColors.white : TColors.primary,
                 decoration: TextDecoration.underline,
                 decorationColor: dark ? TColors.white : TColors.primary,

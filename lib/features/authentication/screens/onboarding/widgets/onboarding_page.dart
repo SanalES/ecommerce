@@ -12,7 +12,7 @@ class onBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  const EdgeInsets.all(TSizes.defaultSpace),
+      padding:  const EdgeInsets.all(Sizes.defaultSpace),
 
       child:  Column(
         children: [
@@ -25,7 +25,7 @@ class onBoardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height:TSizes.spaceBtwItems ,),
+          const SizedBox(height:Sizes.spaceBtwItems ,),
           Text(
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium,

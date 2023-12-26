@@ -1,9 +1,6 @@
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class TFormDivider extends StatelessWidget {
   const TFormDivider({
