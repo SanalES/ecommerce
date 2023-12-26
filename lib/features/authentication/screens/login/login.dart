@@ -1,15 +1,13 @@
 import 'package:ecommerce/common/styles/spaceing_styles.dart';
-import 'package:ecommerce/common/widgets_login_signup/form_divider.dart';
-import 'package:ecommerce/common/widgets_login_signup/social_buttons.dart';
+import 'package:ecommerce/common/widgets/form_divider.dart';
+import 'package:ecommerce/common/widgets/social_buttons.dart';
 import 'package:ecommerce/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -36,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               const SizedBox(
-                height: TSizes.sm,
+                height: Sizes.sm,
               ),
               Text(
                 TTexts.loginSubTitle,
@@ -51,7 +49,7 @@ class LoginScreen extends StatelessWidget {
               TFormDivider(dark: dark, dividerText: TTexts.orSignInWidth.capitalize!,),
 
 
-              const SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: Sizes.spaceBtwSections,),
 
               ///footer
 

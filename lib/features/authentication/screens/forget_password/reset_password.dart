@@ -20,17 +20,17 @@ class ResetPassword extends StatelessWidget {
       ),
       body: SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(Sizes.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
 
             // image
             Image(
-              image: AssetImage(TImage.verifyEmail),
+              image: const AssetImage(TImage.verifyEmail),
               width: THelperFunctions.screenWidth() * 0.6,
             ),
-            const SizedBox(height: TSizes.spaceBtwSections),
+            const SizedBox(height: Sizes.spaceBtwSections),
 
             // Title and Subtitle
             Text(
@@ -38,21 +38,20 @@ class ResetPassword extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: TSizes.spaceBtwItems,),
+            const SizedBox(height: Sizes.spaceBtwItems,),
             Text(
               TTexts.changeYourPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: TSizes.spaceBtwSections),
+            const SizedBox(height: Sizes.spaceBtwSections),
 
             //Button
             SizedBox(width: double.infinity,
                 child: ElevatedButton(onPressed:() {},child: const Text(TTexts.done))),
-            const SizedBox( height:  TSizes.spaceBtwItems,),
+            const SizedBox( height:  Sizes.spaceBtwItems,),
             SizedBox(width: double.infinity,
             child: TextButton(onPressed: () {} , child:  const Text(TTexts.resendEmail),),),
-
 
           ],
         ),

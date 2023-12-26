@@ -1,5 +1,6 @@
 import 'package:ecommerce/features/authentication/screens/forget_password/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
+import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -16,19 +17,19 @@ class  Tlogin_form extends StatelessWidget {
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          vertical: TSizes.spaceBtwSections,
+          vertical: Sizes.spaceBtwSections,
         ),
         child: Column(
           children: [
             // Email
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
                 labelText: TTexts.email,
               ),
             ),
-            const SizedBox(height: TSizes.spaceBtwInputFields),
-            TextField(
+            const SizedBox(height: Sizes.spaceBtwInputFields),
+            const TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: TTexts.password,
@@ -36,7 +37,7 @@ class  Tlogin_form extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: TSizes.spaceBtwInputFields / 2,
+              height: Sizes.spaceBtwInputFields / 2,
             ),
 
             // Remember me and forget password
@@ -62,18 +63,18 @@ class  Tlogin_form extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: TSizes.spaceBtwSections,
+              height: Sizes.spaceBtwSections,
             ),
 
             // Sign in button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () =>Get.to(()=> const NavigationMenu()),
                 child: const Text(TTexts.signIn),
               ),
             ),
-            const SizedBox(height: TSizes.spaceBtwItems),
+            const SizedBox(height: Sizes.spaceBtwItems),
 
             // Account Button
             SizedBox(

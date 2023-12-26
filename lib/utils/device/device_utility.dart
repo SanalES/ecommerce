@@ -2,12 +2,10 @@
 
 import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class TDeviceUtils{
@@ -51,7 +49,7 @@ class TDeviceUtils{
   }
 
   static Future<bool> isKeyboardVisible() async {
-    final viewInsets = WidgetsBinding.instance!.window.viewInsets;
+    final viewInsets = WidgetsBinding.instance.window.viewInsets;
     return viewInsets.bottom > 0;
   }
 

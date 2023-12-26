@@ -3,7 +3,6 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ForgetPassword extends StatelessWidget {
@@ -14,7 +13,7 @@ class ForgetPassword extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(TSizes.defaultSpace),
+        padding: const EdgeInsets.all(Sizes.defaultSpace),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -23,29 +22,29 @@ class ForgetPassword extends StatelessWidget {
               TTexts.forgotPassword,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            SizedBox(
-              height: TSizes.spaceBtwItems,
+            const SizedBox(
+              height: Sizes.spaceBtwItems,
             ),
             Text(
               TTexts.forgetPsswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
             const SizedBox(
-              height: TSizes.spaceBtwSections * 2,
+              height: Sizes.spaceBtwSections * 2,
             ),
 
             ///TextField
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   labelText: TTexts.email,
                   prefixIcon: Icon(Iconsax.direct_right)),
             ),
-            const SizedBox(height: TSizes.spaceBtwSections,),
+            const SizedBox(height: Sizes.spaceBtwSections,),
 
             ///Submit Button
             SizedBox(width: double.infinity,
             child:
-            ElevatedButton(onPressed: () => Get.off(() =>const ResetPassword())  , child: Text(TTexts.submit)),)
+            ElevatedButton(onPressed: () => Get.off(() =>const ResetPassword())  , child: const Text(TTexts.submit)),)
 
           ],
         ),

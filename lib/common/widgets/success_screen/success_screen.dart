@@ -1,11 +1,8 @@
 import 'package:ecommerce/common/styles/spaceing_styles.dart';
-import 'package:ecommerce/features/authentication/screens/login/login.dart';
-import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({super.key, required this.image, required this.title, required this.subTitle, required this.onPressed});
@@ -25,7 +22,7 @@ class SuccessScreen extends StatelessWidget {
                 image: AssetImage(image),
                 width: THelperFunctions.screenWidth() * 0.6,
               ),
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: Sizes.spaceBtwSections),
 
               // Title and Subtitle
               Text(
@@ -33,13 +30,13 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: Sizes.spaceBtwItems,),
               Text(
                 subTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: Sizes.spaceBtwSections),
 
           //Button
               SizedBox(width: double.infinity,
