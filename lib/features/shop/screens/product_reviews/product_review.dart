@@ -1,8 +1,15 @@
 import 'package:ecommerce/common/widgets/appbar/appbar.dart';
+import 'package:ecommerce/common/widgets/products/ratings/rating_indicator.dart';
+import 'package:ecommerce/features/shop/screens/product_detail/widgets/rating_share_widget.dart';
+import 'package:ecommerce/features/shop/screens/product_reviews/product_review.dart';
+import 'package:ecommerce/features/shop/screens/product_reviews/widgets/progress_indicatorand_rating.dart';
+import 'package:ecommerce/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:iconsax/iconsax.dart';
 
 class ProductReviewsScreen extends StatelessWidget {
   const ProductReviewsScreen({super.key});
@@ -12,48 +19,36 @@ class ProductReviewsScreen extends StatelessWidget {
     return Scaffold(
 
       ///AppBar
-      appBar: TAppBar(title: Text("Reviews & Ratings"),showBackArrow: true,),
+      appBar: TAppBar(title: Text("Reviews & Ratings"), showBackArrow: true,),
 
       ///Body
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(Sizes.defaultSpace),
+          padding: EdgeInsets.all(Sizes.defaultSpace),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Ratings and review based on the product used by the users ")
-              const SizedBox(height: Sizes.spaceBtwItems,),
+              Text("Ratings and review based on the product used by the users "),
+              SizedBox(height: Sizes.spaceBtwItems,),
 
-              Row(
-                children: [
-                  Expanded( flex : 3 ,child: Text("4.1", style: Theme.of(context).textTheme.displayLarge,)),
-                  Expanded(
-                    flex: 7,
-                    child: Column(
-                      children: [
-                        Text("5" , style: Theme.of(context).textTheme.bodyMedium,),
-                        Expanded(
-                          child: SizedBox(
-                            width: TDeviceUtils.getScreenWidth(context)* 0.5,
-                            child: LinearProgressIndicator(
-                              value: 0.5,
-                              minHeight: 11,
-                                backgroundColor: TColors.grey,
-                              valueColor:AlwaysStoppedAnimation( TColors.primary,),
-                              borderRadius: BorderRadius.circular(7),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              )
+               ///Overall Product Ratings
+                 OverallProductRating(),
+
+              ///Ratings
+               TRatingBarIndicator(
+                 rating: 4.2,),
+              Text("10345" , style: Theme.of(context).textTheme.bodySmall,),
+              const SizedBox(height: Sizes.spaceBtwSections,),
+
+
+              ///User Reviews
+
+              U
             ],
           ),
         ),
-        
+
       ),
 
     );
