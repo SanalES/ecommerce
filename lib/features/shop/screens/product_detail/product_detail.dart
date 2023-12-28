@@ -1,5 +1,6 @@
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/features/shop/screens/product_detail/product_detail_image_slider.dart';
+<<<<<<< HEAD
 import 'package:ecommerce/features/shop/screens/product_detail/widgets/bottom_addto_cart.dart';
 import 'package:ecommerce/features/shop/screens/product_detail/widgets/product-attributes.dart';
 import 'package:ecommerce/features/shop/screens/product_detail/widgets/product_meta_data.dart';
@@ -9,6 +10,14 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+=======
+import 'package:ecommerce/features/shop/screens/product_detail/widgets/product-attributes.dart';
+import 'package:ecommerce/features/shop/screens/product_detail/widgets/product_meta_data.dart';
+import 'package:ecommerce/features/shop/screens/product_detail/widgets/rating_share_widget.dart';
+import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/helpers/helper_functions.dart';
+import 'package:flutter/material.dart';
+>>>>>>> github/master
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -20,7 +29,11 @@ class ProductDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return  Scaffold(
+<<<<<<< HEAD
       bottomNavigationBar: BottomAddToCart(),
+=======
+      bottomNavigationBar: ,
+>>>>>>> github/master
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -74,7 +87,11 @@ class ProductDetail extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   TSectionHeading(title: "Review(199" , onPressed: () {},showActionButton: false,),
+<<<<<<< HEAD
                   IconButton(onPressed: ()=> Get.to(()=> const ProductReviewsScreen()), icon:Icon( Iconsax.arrow_right1 , size: 18,) ,)
+=======
+                  IconButton(onPressed: () {}, icon:Icon( Iconsax.arrow_right1 , size: 18,) ,)
+>>>>>>> github/master
                 ],
               ),
 
