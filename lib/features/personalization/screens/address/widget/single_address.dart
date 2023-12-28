@@ -13,8 +13,9 @@ class SingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return TRoundedContainer(
-          width: double.infinity,
           showBorder: true,
+          padding: const EdgeInsets.all(Sizes.md),
+          width: double.infinity,
           backgroundColor: selectedaddress? TColors.primary.withOpacity(0.5) :Colors.transparent  ,
       borderColor: selectedaddress? Colors.transparent : dark ? TColors.darkerGrey :TColors.grey,
       margin: EdgeInsets.only(bottom: Sizes.spaceBtwItems),
@@ -25,18 +26,24 @@ class SingleAddress extends StatelessWidget {
             top: 0,
             child: Icon(
               selectedaddress ? Iconsax.tick_circle5 : null,
-              color: selectedaddress ? dark ? TColors.light:TColors.dark: null,
+
+              color: selectedaddress ? dark ?
+              TColors.light:TColors.dark: null,
             ),
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                " Elavumkal House Vellaramkunnu",
+                " Sanal ES",
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               const SizedBox(height: Sizes.sm /2,),
+              const Text("9207321967" ,maxLines: 1, overflow: TextOverflow.ellipsis,),
+              const SizedBox(height: Sizes.sm /2,),
+              Text(" Elavumkal House Idukki", softWrap: true,)
 
             ],
           )
