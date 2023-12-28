@@ -18,8 +18,6 @@ class RatingAndShare extends StatelessWidget {
 
             const Icon(Iconsax.star5 , color: Colors.amber, size: 24,),
 
-            Icon(Iconsax.star5 , color: Colors.amber, size: 24,),
-
             const SizedBox(width:  Sizes.spaceBtwItems/2,),
             Text.rich(
                 TextSpan(
@@ -36,8 +34,6 @@ class RatingAndShare extends StatelessWidget {
 
 
         IconButton(onPressed: () {}, icon: const Icon(Icons.share , size: Sizes.iconMd,)),
-
-        IconButton(onPressed: () {}, icon: Icon(Icons.share , size: Sizes.iconMd,)),
 
 
       ],

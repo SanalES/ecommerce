@@ -36,7 +36,7 @@ class ProductMetaData extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: Sizes.spaceBtwItems,
+              width: Sizes.spaceBtwItems,
             ),
 
             //price
@@ -71,7 +71,7 @@ class ProductMetaData extends StatelessWidget {
         ///Stock Status
         Row(
           children: [
-            const TProductTitleText(title: "Status"),
+            const TProductTitleText(title: "Status :"),
             const SizedBox(
               width: Sizes.spaceBtwItems,
             ),

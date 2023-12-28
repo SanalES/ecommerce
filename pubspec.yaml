@@ -23,7 +23,10 @@ dependencies:
   flutter_native_splash: ^2.3.6
   smooth_page_indicator: ^1.1.0
   readmore: ^2.2.0
-# Icons
+  carousel_slider: ^4.2.1
+  flutter_rating_bar: ^4.0.1
+
+  # Icons
 
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.6
@@ -53,6 +56,8 @@ flutter:
    - assets/images/
    - assets/logos/
    - assets/animations/
+   - assets/products/
+   - assets/banners/
 
 # Local Fonts -------
 

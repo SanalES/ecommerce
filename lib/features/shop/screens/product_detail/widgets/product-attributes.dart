@@ -24,7 +24,7 @@ class ProductAttributes extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  TSectionHeading(title: "Other Options", showActionButton: true,),
+                  TSectionHeading(title: "Other Options", showActionButton: false,),
                   SizedBox(width: Sizes.spaceBtwItems,),
 
                   Column(
@@ -47,7 +47,7 @@ class ProductAttributes extends StatelessWidget {
                       Row(
                         children: [
                           const TProductTitleText(title: "Stock" , smallSize: true,),
-                          Text("\$125", style: Theme.of(context).textTheme.titleSmall),
+                          Text("234", style: Theme.of(context).textTheme.titleSmall),
                         ],
                       )
                     ],
@@ -57,7 +57,7 @@ class ProductAttributes extends StatelessWidget {
 
               ///Descriptions etc...
 
-              TProductTitleText(title: "Adidas sports shoes which cab used for ............",
+              const TProductTitleText(title: "Adidas sports shoes which cab used for ............",
               smallSize: true,
               maxLines: 4,
               ),
