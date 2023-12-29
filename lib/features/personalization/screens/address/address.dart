@@ -1,5 +1,4 @@
 import 'package:ecommerce/common/widgets/appbar/appbar.dart';
-import 'package:ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:ecommerce/features/personalization/screens/address/add_new_address.dart';
 import 'package:ecommerce/features/personalization/screens/address/widget/single_address.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
@@ -14,18 +13,19 @@ class UserAddressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed:() => Get.to(() => AddNewAddressScreen() ),
+      floatingActionButton: FloatingActionButton(onPressed:() => Get.to(() => const AddNewAddressScreen() ),
       child: const Icon(Iconsax.add , color: TColors.white,),
       backgroundColor: TColors.primary,),
     appBar: TAppBar(
       showBackArrow: true,
       title: Text("Address", style: Theme.of(context).textTheme.labelMedium,),
     ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(padding: EdgeInsets.all(Sizes.defaultSpace) ,
           child: Column(
             children: [
-              SingleAddress(selectedaddress: true)
+              SingleAddress(selectedaddress: true),
+              SingleAddress(selectedaddress: false),
                ],
           ) ,) ,
       ),
