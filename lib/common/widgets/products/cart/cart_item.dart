@@ -32,18 +32,23 @@ class CartItem extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const TBrandTitleWithVerifiedIcon(title: "Adidas"),
+               TBrandTitleWithVerifiedIcon(title: "Adidas"),
               Flexible(child: const TProductTitleText(title: "Black Sports Shoes" , maxLines: 1,)),
 
               ///Attributes
-              Text.rich(TextSpan(
+              Text.rich(
+                TextSpan(
                   children: [
-                    TextSpan(text: "Color" , style: Theme.of(context).textTheme.bodySmall),
-                    TextSpan(text: "Green" , style: Theme.of(context).textTheme.bodyLarge),
-                    TextSpan(text: "Size" , style: Theme.of(context).textTheme.bodySmall),
-                    TextSpan(text: "UK 10" , style: Theme.of(context).textTheme.bodyLarge),
-                  ]
-              ))
+                    TextSpan(text: "Color", style: Theme.of(context).textTheme.bodySmall),
+                    WidgetSpan(child: SizedBox(width: 5)),
+                    TextSpan(text: "Green", style: Theme.of(context).textTheme.bodyLarge),
+                    WidgetSpan(child: SizedBox(width: 10)),
+                    TextSpan(text: "Size", style: Theme.of(context).textTheme.bodySmall),
+                    WidgetSpan(child: SizedBox(width: 5)),
+                    TextSpan(text: "UK 10", style: Theme.of(context).textTheme.bodyLarge),
+                  ],
+                ),
+              )
 
 
             ],
