@@ -7,6 +7,8 @@ import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/features/personalization/screens/address/address.dart';
 import 'package:ecommerce/features/personalization/screens/profile/profile.dart';
 import 'package:ecommerce/features/personalization/screens/settings/settings.dart';
+import 'package:ecommerce/features/shop/screens/order/order.dart';
+import 'package:ecommerce/features/shop/screens/order/widgets/order_list.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -66,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
                 ),SettingsMenuTile(icon: Iconsax.bag_tick,
                   title: 'Orders',
                   subTitle: "Details of products you ordered",
-                  onTap: () {},
+                  onTap: ()  => Get.to(()=> const OrderScreen()),
                 ),SettingsMenuTile(icon: Iconsax.bank,
                   title: 'Payment Methods',
                   subTitle: "Linked payment methods , upi , bank etc",
