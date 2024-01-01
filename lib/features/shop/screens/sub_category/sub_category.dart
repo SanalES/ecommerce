@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:ecommerce/common/widgets/images/t_rounded_image.dart';
+import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,15 @@ class SubCategory extends StatelessWidget {
       child: Column(
         children: [
           ///Banner
-          TRoundedImage(imageUrl: TImage.promo_banner1 , width: double.infinity , height: null , applyImageRadius: true,)
+          TRoundedImage(imageUrl: TImage.promo_banner1 , width: double.infinity , height: null , applyImageRadius: true,),
+          const SizedBox(height: Sizes.spaceBtwSections,),
+
+          ///Sub Category
+          Column(
+            children: [
+              TSectionHeading(title: "Sports Shirts")
+            ],
+          )
         ],
       ),),
     ),
