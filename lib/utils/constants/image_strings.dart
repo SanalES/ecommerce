@@ -104,4 +104,10 @@ class TImage {
   //profile
   static const String user="assets/icons/user.png";
 
+  //payment methods
+  static const String googlepay ="assets/payment/googlepay.png";
+  static const String phonepay ="assets/payment/phonepay.png";
+  static const String  cardpayment="assets/payment/cardpayment.png";
+  static const String  netbanking="assets/payment/netbanking.png";
+  static const String  paymentsucess="assets/payment/PAYMENT-SUCCESS.png";
 }

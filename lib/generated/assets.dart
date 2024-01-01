@@ -16,7 +16,7 @@ class Assets {
   static const String iconsShoes = 'assets/icons/shoes.jpg';
   static const String iconsSports icon = 'assets/icons/sports icon.png';
   static const String iconsToy = 'assets/icons/toy.png';
-  static const String iconsUserpng = 'assets/icons/userpng.png';
+  static const String iconsUser = 'assets/icons/user.png';
   static const String logosApplight = 'assets/logos/applight.png';
   static const String logosDarkapp = 'assets/logos/darkapp.png';
   static const String logosDel3 = 'assets/logos/del3.png';
@@ -24,6 +24,11 @@ class Assets {
   static const String logosFacebook = 'assets/logos/facebook.png';
   static const String logosGoogle = 'assets/logos/google.png';
   static const String logosSeconddel = 'assets/logos/seconddel.png';
+  static const String paymentCardpayment = 'assets/payment/cardpayment.png';
+  static const String paymentGooglepay = 'assets/payment/googlepay.png';
+  static const String paymentNetbanking = 'assets/payment/netbanking.png';
+  static const String paymentPAYMENTSUCCESS = 'assets/payment/PAYMENT-SUCCESS.png';
+  static const String paymentPhonepay = 'assets/payment/phonepay.png';
   static const String productsAdidas = 'assets/products/adidas.png';
   static const String productsCloth = 'assets/products/cloth.png';
   static const String productsCosmetics1 = 'assets/products/cosmetics1.webp';
