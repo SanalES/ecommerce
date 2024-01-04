@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:ecommerce/common/widgets/images/t_rounded_image.dart';
+import 'package:ecommerce/common/widgets/products/product_cards/product_card_horizontal.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -13,7 +14,7 @@ class SubCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       appBar: TAppBar(title:Text("Sports Shirts"), showBackArrow: true,),
     body: SingleChildScrollView(
       child: Padding(padding: EdgeInsets.all(Sizes.defaultSpace),
@@ -26,7 +27,12 @@ class SubCategory extends StatelessWidget {
           ///Sub Category
           Column(
             children: [
-              TSectionHeading(title: "Sports Shirts")
+              ///Headings okke
+              TSectionHeading(title: "Sports Shirts" , onPressed: (){}),
+              const SizedBox(height: Sizes.spaceBtwItems /2,),
+
+             const TProductCardHorizontal(),
+
             ],
           )
         ],
